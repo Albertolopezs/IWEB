@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Practica_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Practica 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwI-up-mjm">
+                                <rect key="frame" x="131.5" y="15.5" width="112.5" height="31.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La fecha de la fiesta de tu media naranja es:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEZ-9d-ffS">
+                                <rect key="frame" x="28" y="123" width="319" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPC-Zt-IuD">
+                                <rect key="frame" x="180" y="227" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPD-aK-2ox">
+                                <rect key="frame" x="159.5" y="387" width="56" height="30"/>
+                                <state key="normal" title="Calcular"/>
+                                <connections>
+                                    <segue destination="yFS-va-EmN" kind="presentation" identifier="PrimerSegue" id="3jM-KK-7of"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.56702922879999995" green="1" blue="0.97756772270000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="mwI-up-mjm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-4.5" id="3AG-AI-syu"/>
+                            <constraint firstItem="xEZ-9d-ffS" firstAttribute="top" secondItem="mwI-up-mjm" secondAttribute="bottom" constant="76" id="GIO-Oz-DDE"/>
+                            <constraint firstItem="mwI-up-mjm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ki7-zn-Zre"/>
+                            <constraint firstItem="aPC-Zt-IuD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-7.5" id="LNA-9s-0Bh"/>
+                            <constraint firstItem="yPD-aK-2ox" firstAttribute="top" secondItem="aPC-Zt-IuD" secondAttribute="bottom" constant="160" id="NIT-Fb-vjF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xEZ-9d-ffS" secondAttribute="trailing" constant="12" id="efd-RT-0p8"/>
+                            <constraint firstItem="yPD-aK-2ox" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h3f-02-TuS"/>
+                            <constraint firstItem="xEZ-9d-ffS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lBE-ol-N1v"/>
+                            <constraint firstItem="aPC-Zt-IuD" firstAttribute="top" secondItem="xEZ-9d-ffS" secondAttribute="bottom" constant="86" id="qkV-VF-4Dt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="DateLabel" destination="aPC-Zt-IuD" id="yUc-Ge-vSm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+        <!--Birthday View Controller-->
+        <scene sceneID="cQX-hc-o99">
+            <objects>
+                <viewController id="yFS-va-EmN" customClass="BirthdayViewController" customModule="Practica_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aO0-N9-GTW"/>
+                        <viewControllerLayoutGuide type="bottom" id="o0S-jd-kGR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F8X-lT-tZQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="HRx-5I-lB7">
+                                <rect key="frame" x="27.5" y="225.5" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="562614835.20941496">
+                                    <!--2018-10-30 17:53:55 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pxh-ZA-xt3">
+                                <rect key="frame" x="80" y="491.5" width="30" height="30"/>
+                                <state key="normal" title="Ok"/>
+                                <connections>
+                                    <segue destination="NiN-Q8-3fn" kind="presentation" identifier="Segundosegue" id="Yce-t9-uLM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Cuando naciste?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3l-36-cSh">
+                                <rect key="frame" x="119.5" y="104.5" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uK-BV-L3Z">
+                                <rect key="frame" x="234" y="491.5" width="61" height="30"/>
+                                <state key="normal" title="Cancelar"/>
+                                <connections>
+                                    <action selector="CancelButtonPressed:" destination="yFS-va-EmN" eventType="touchUpInside" id="vvr-fl-SkD"/>
+                                    <segue destination="sr1-83-SbF" kind="unwind" unwindAction="unwindToVC1WithSegue:" id="tx8-aS-5Uh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.56702922879999995" green="1" blue="0.97756772270000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="HRx-5I-lB7" firstAttribute="centerX" secondItem="F8X-lT-tZQ" secondAttribute="centerX" id="3Xy-6q-HbY"/>
+                            <constraint firstItem="HRx-5I-lB7" firstAttribute="top" secondItem="O3l-36-cSh" secondAttribute="bottom" constant="100" id="8mz-nt-fmY"/>
+                            <constraint firstItem="Pxh-ZA-xt3" firstAttribute="top" secondItem="HRx-5I-lB7" secondAttribute="bottom" constant="50" id="Iu3-CD-rFV"/>
+                            <constraint firstItem="HRx-5I-lB7" firstAttribute="centerY" secondItem="F8X-lT-tZQ" secondAttribute="centerY" id="JOi-QQ-7Ly"/>
+                            <constraint firstItem="O3l-36-cSh" firstAttribute="centerX" secondItem="F8X-lT-tZQ" secondAttribute="centerX" id="NRo-oY-Zmb"/>
+                            <constraint firstAttribute="trailing" secondItem="4uK-BV-L3Z" secondAttribute="trailing" constant="80" id="XOS-5g-UrK"/>
+                            <constraint firstItem="4uK-BV-L3Z" firstAttribute="top" secondItem="HRx-5I-lB7" secondAttribute="bottom" constant="50" id="gWz-po-Wxs"/>
+                            <constraint firstItem="Pxh-ZA-xt3" firstAttribute="leading" secondItem="F8X-lT-tZQ" secondAttribute="leading" constant="80" id="weD-AI-dPI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BirthdayDatePicker" destination="HRx-5I-lB7" id="01P-F9-fkZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LAM-cT-BFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="sr1-83-SbF" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="824.79999999999995" y="123.68815592203899"/>
+        </scene>
+        <!--Loveday-->
+        <scene sceneID="DXK-wh-fdJ">
+            <objects>
+                <viewController id="NiN-Q8-3fn" customClass="Loveday" customModule="Practica_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8wj-g9-gKD"/>
+                        <viewControllerLayoutGuide type="bottom" id="0ch-CT-9Ts"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mI0-g2-Ut3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="yi7-WV-kfT">
+                                <rect key="frame" x="27.5" y="225.5" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="562614926.96501601">
+                                    <!--2018-10-30 17:55:26 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Cuando conociste a tu media naranja?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKT-TX-NEI">
+                                <rect key="frame" x="38" y="104.5" width="299.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFx-JF-DM7">
+                                <rect key="frame" x="80" y="491.5" width="30" height="30"/>
+                                <state key="normal" title="Ok"/>
+                                <connections>
+                                    <action selector="OkButtonPressed:" destination="NiN-Q8-3fn" eventType="touchUpInside" id="z10-eY-SuT"/>
+                                    <segue destination="ISE-qG-yJU" kind="unwind" identifier="UnwindSegueMain" unwindAction="unwindToVC1WithSegue:" id="n6T-L7-2Ii"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yzq-FI-Ukm">
+                                <rect key="frame" x="234" y="491.5" width="61" height="30"/>
+                                <state key="normal" title="Cancelar"/>
+                                <connections>
+                                    <action selector="CancelButtonPressed:" destination="NiN-Q8-3fn" eventType="touchUpInside" id="fwo-sQ-6Ym"/>
+                                    <segue destination="ISE-qG-yJU" kind="unwind" unwindAction="unwindToVC1WithSegue:" id="Wbd-mP-HjZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.56702922879999995" green="1" blue="0.97756772270000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="yzq-FI-Ukm" firstAttribute="top" secondItem="yi7-WV-kfT" secondAttribute="bottom" constant="50" id="20t-MS-aUv"/>
+                            <constraint firstItem="yi7-WV-kfT" firstAttribute="centerX" secondItem="mI0-g2-Ut3" secondAttribute="centerX" id="8vi-OG-5dx"/>
+                            <constraint firstItem="yi7-WV-kfT" firstAttribute="centerY" secondItem="mI0-g2-Ut3" secondAttribute="centerY" id="Dvu-9n-WSS"/>
+                            <constraint firstItem="yi7-WV-kfT" firstAttribute="top" secondItem="zKT-TX-NEI" secondAttribute="bottom" constant="100" id="Gwl-77-Fjo"/>
+                            <constraint firstAttribute="trailing" secondItem="yzq-FI-Ukm" secondAttribute="trailing" constant="80" id="Jd0-Za-OoM"/>
+                            <constraint firstItem="mFx-JF-DM7" firstAttribute="leading" secondItem="mI0-g2-Ut3" secondAttribute="leading" constant="80" id="cnj-jJ-lpG"/>
+                            <constraint firstItem="zKT-TX-NEI" firstAttribute="centerX" secondItem="mI0-g2-Ut3" secondAttribute="centerX" id="hGg-CO-3jk"/>
+                            <constraint firstItem="mFx-JF-DM7" firstAttribute="top" secondItem="yi7-WV-kfT" secondAttribute="bottom" constant="50" id="zwE-d9-0YC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="LovedayPickerDate" destination="yi7-WV-kfT" id="Y8T-39-uuc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XAm-j9-edz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ISE-qG-yJU" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1493.5999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
