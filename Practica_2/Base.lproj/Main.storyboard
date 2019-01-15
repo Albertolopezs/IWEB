@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Practica_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="wT8-sJ-mck">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P2- Cubo Flotando" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Zf-no-ZIT">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="31.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eDO-xD-ADn" userLabel="Stack total" colorLabel="IBBuiltInLabel-Orange">
+                                        <rect key="frame" x="0.0" y="40.5" width="375" height="606.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XUe-He-yu1">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="303.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSo-hm-Chu">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Lado:   " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VM1-gs-q5f">
+                                                                <rect key="frame" x="0.0" y="0.0" width="56" height="30"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eM-EC-7pP">
+                                                                <rect key="frame" x="56" y="0.0" width="42" height="30"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <slider opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="right" contentVerticalAlignment="center" value="3" minValue="0.0" maxValue="6" translatesAutoresizingMaskIntoConstraints="NO" id="Lrj-g7-Bic">
+                                                                <rect key="frame" x="96" y="0.0" width="281" height="31"/>
+                                                                <connections>
+                                                                    <action selector="refreshAristSize:" destination="BYZ-38-t0r" eventType="valueChanged" id="bI9-QO-v5J"/>
+                                                                </connections>
+                                                            </slider>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Df5-mt-CSb" userLabel="3 GRAFICAS">
+                                                        <rect key="frame" x="0.0" y="30" width="375" height="273.5"/>
+                                                        <subviews>
+                                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="5bI-YA-dOP" customClass="DrawGraphic" customModule="Practica_2" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="91"/>
+                                                                <color key="backgroundColor" red="0.74901960779999999" green="0.89019607840000003" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="textX" value="Tiempo"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="textY" value="Posición"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="H3q-e4-num" customClass="DrawGraphic" customModule="Practica_2" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="91" width="375" height="91"/>
+                                                                <color key="backgroundColor" red="0.90980392160000001" green="0.45815203842949043" blue="0.41323422385766789" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="textX" value="Tiempo"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="textY" value="Velocidad"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="UgB-iq-HRB" customClass="DrawGraphic" customModule="Practica_2" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="182" width="375" height="91.5"/>
+                                                                <color key="backgroundColor" red="0.93461538461538463" green="0.92318644756438151" blue="0.24425694739728418" alpha="0.88006465517241383" colorSpace="calibratedRGB"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="textX" value="Tiempo"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="textY" value="Aceleración"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <variation key="heightClass=compact">
+                                                    <mask key="subviews">
+                                                        <include reference="Df5-mt-CSb"/>
+                                                    </mask>
+                                                </variation>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="koh-3d-XBN">
+                                                <rect key="frame" x="0.0" y="303.5" width="375" height="303"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OQe-3c-ZZa">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiempo:  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uC1-Pg-ned">
+                                                                <rect key="frame" x="0.0" y="0.0" width="71" height="30"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZS-Ra-sxJ">
+                                                                <rect key="frame" x="71" y="0.0" width="42" height="30"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <slider opaque="NO" contentMode="right" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="cae-Fu-Q0I">
+                                                                <rect key="frame" x="111" y="0.0" width="266" height="31"/>
+                                                                <connections>
+                                                                    <action selector="refreshPOI:" destination="BYZ-38-t0r" eventType="valueChanged" id="1xt-4Q-Pk3"/>
+                                                                </connections>
+                                                            </slider>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="dp1-89-USK" customClass="DrawGraphic" customModule="Practica_2" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="30" width="375" height="273"/>
+                                                        <color key="backgroundColor" red="0.46007177203865235" green="0.73581533587857884" blue="1" alpha="0.8126346982758621" colorSpace="calibratedRGB"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="textX" value="Velocidad"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="textY" value="Posición"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <variation key="heightClass=compact" axis="horizontal"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="zVG-TM-Pzq" appends="YES" id="4Wz-g8-UmF"/>
+                                            <outletCollection property="gestureRecognizers" destination="Eil-0c-zxt" appends="YES" id="nxE-Jc-N9I"/>
+                                        </connections>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="3Zf-no-ZIT" firstAttribute="centerX" secondItem="wT8-sJ-mck" secondAttribute="centerX" id="XtF-bo-Uqj"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90947516029999997" green="0.78240328420000005" blue="0.4381611218" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wT8-sJ-mck" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Cgi-RZ-Zrj"/>
+                            <constraint firstAttribute="trailing" secondItem="wT8-sJ-mck" secondAttribute="trailing" id="TkN-ng-HjH"/>
+                            <constraint firstItem="wT8-sJ-mck" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cUF-kN-Cqx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wT8-sJ-mck" secondAttribute="bottom" id="utl-34-8Vo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="AristSizeLabel" destination="6eM-EC-7pP" id="uqN-PU-ipg"/>
+                        <outlet property="AristSizeSlider" destination="Lrj-g7-Bic" id="cAM-UI-Qdo"/>
+                        <outlet property="POISlider" destination="cae-Fu-Q0I" id="OD9-xa-Dhi"/>
+                        <outlet property="PosTimeFunctionView" destination="5bI-YA-dOP" id="7pu-Qp-iRW"/>
+                        <outlet property="TimeLabel" destination="qZS-Ra-sxJ" id="V8D-f6-SmM"/>
+                        <outlet property="acelTimeFunctionView" destination="UgB-iq-HRB" id="LRB-vJ-ge3"/>
+                        <outlet property="speedPosFunctionView" destination="dp1-89-USK" id="iiO-oA-1v7"/>
+                        <outlet property="speedTimeFunctionView" destination="H3q-e4-num" id="rCn-Y3-OQ9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="Eil-0c-zxt">
+                    <connections>
+                        <action selector="pinchScale:" destination="BYZ-38-t0r" id="aZ4-5f-0Vu"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="zVG-TM-Pzq">
+                    <connections>
+                        <action selector="tapScale:" destination="BYZ-38-t0r" id="HAW-pL-C8k"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="116" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
